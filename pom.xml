@@ -17,7 +17,7 @@
         <dependency>
             <groupId>io.github.oleksandrpodoliako</groupId>
             <artifactId>nearest</artifactId>
-            <version>1.0.1</version>
+            <version>1.2.0</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
