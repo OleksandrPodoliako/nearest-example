@@ -30,12 +30,13 @@ public class Post {
 }
 ```
 
-* Create Client class and add interface IRestClient. Specify request and response body type in interface
+* Create Client class and add interface IRestClient. Specify request's and response's body types in interface
 
 ```
 public class PostClient implements IRestClient<Post, Post> {
 }
 ```
+
 * Now you can instantiate Client class, which has all CRUD operations implemented
 
 ```
