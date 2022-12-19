@@ -41,14 +41,16 @@ public class PostClient implements IRestClient<Post, Post> {
 
 ```
 public class Main {
-    private static final String URL = "https://jsonplaceholder.typicode.com/posts/1";
+    private static final String URL = "https://jsonplaceholder.typicode.com/posts/";
 
     public static void main(String[] args) {
 
-        RequestWrapper<Post> requestWrapper = RequestWrapper.<Post>builder().build();
+        RequestWrapper<Post> requestWrapper = RequestWrapper.<Post>builder()
+                .url(URL)
+                .apiMethod(APIMethod.GET_ARRAY)
+                .build();
 
-        ResponseWrapper<Post> responseWrapper = new PostClient().getEntity(URL, requestWrapper);
-        
+        ResponseWrapper<Post> responseWrapper = new PostClient().send(requestWrapper);
     }
 }
 ```
