@@ -8,7 +8,7 @@ NeaRest example is a project-illustration how to use NeaRest
 <dependency>
     <groupId>io.github.oleksandrpodoliako</groupId>
     <artifactId>nearest</artifactId>
-    <version>1.2.0</version>
+    <version>${LAST_VERSION}</version>
 </dependency>
 ```
 * Create POJO model
